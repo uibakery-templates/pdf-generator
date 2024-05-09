@@ -1,0 +1,190 @@
+id: '16221982620990.6848960122224759'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 12
+      w: 24
+      h: 160
+properties:
+  name: usersSmartTable
+  title: Users
+  data: '{{actions.loadUsers.data}}'
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadUsers.loading}}'
+    value: false
+  triggerRowSelectOnInit:
+    value: true
+    dataValue: 'false'
+    withData: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  selectRowOnEditButtonClick:
+    value: false
+    dataValue: 'false'
+    withData: false
+  limit: '12'
+  rowHeight: dynamic
+actions: {}
+index: 0
+slots:
+  - id: '16221982620990.36791734153555455'
+    name: columns
+    children:
+      - id: '16221982621010.18077220310056386'
+        definitionId: atomicNumber
+        styles: {}
+        properties:
+          name: atomicNumber
+          prop: id
+          primaryKey: true
+          width: '40'
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 0
+        slots: []
+      - id: '16221982621010.22293560313407013'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString
+          prop: fullName
+          primaryKey: false
+          width: 150
+          filter: true
+          length:
+            value: {}
+            withData: false
+            dataValue: '[0, 10]'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 2
+        slots: []
+      - id: '16221982621010.9703407627630531'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString4
+          prop: username
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 3
+        slots: []
+      - id: '16221982621010.3380814964116763'
+        definitionId: atomicImage
+        styles: {}
+        properties:
+          name: atomicImage
+          prop: avatar
+          primaryKey: false
+          width: '50'
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          fileInputType:
+            value: file
+            withData: false
+            dataValue: file
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 1
+        slots: []
+      - id: '16221982621020.0905064017569599'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString5
+          prop: email
+          primaryKey: false
+          inputType: email
+          width: '200'
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 4
+        slots: []
+      - id: '16221982621020.9112839293341659'
+        definitionId: atomicBoolean
+        styles: {}
+        properties:
+          name: atomicBoolean
+          prop: emailVerified
+          primaryKey: false
+          width: 90
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          controlType:
+            value: toggle
+            dataValue: toggle
+            withData: false
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 5
+        slots: []
+      - id: '16221982621020.04557537556711644'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString6
+          prop: phone
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 6
+        slots: []
+      - id: '16221982621020.1490385256550315'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString7
+          prop: twitterHandle
+          primaryKey: false
+          width: '100'
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 7
+        slots: []
+      - id: '16221982621020.6674519215367214'
+        definitionId: atomicText
+        styles: {}
+        properties:
+          name: atomicText
+          prop: bio
+          primaryKey: false
+          width: '250'
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          lines: '2'
+        parentSlotId: '16221982620990.36791734153555455'
+        index: 8
+        slots: []

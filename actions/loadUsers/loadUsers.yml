@@ -1,0 +1,57 @@
+id: '16221982486050.2771887199240053'
+name: loadUsers
+nameConfigured: true
+steps:
+  - id: '16491708464130.7559123145212896'
+    type: httpRequest
+    params:
+      - type: method
+        value: GET
+        valueType: string
+      - type: datasourceId
+        value: httpApi
+        valueType: string
+      - type: url
+        value: https://example-data.draftbit.com/users
+        valueType: interpolatedValue
+      - type: headers
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: body
+        value: ''
+        valueType: interpolatedValue
+      - type: bodyType
+        value: raw
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: true
+    isChanged: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadUsers.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadUsers.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.loadUsers.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+assigned: false
+selected: true
+singleStep: true
+kind: workflow

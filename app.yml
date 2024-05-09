@@ -1,0 +1,22 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: >-
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.0/polyfills.umd.js"></script>
+
+    <script
+    src="https://unpkg.com/jspdf-autotable@3.5.13/dist/jspdf.plugin.autotable.min.js"></script>
+  title: PDF Generator
+  description: ''
+  breakpoints: []
+  rendererCachingEnabled: false
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: compact
+internalType: project
